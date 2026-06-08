@@ -1,0 +1,16 @@
+{
+  "name": "bunkercore",
+  "version": "1.0.0",
+  "description": "Motor de seguridad Zero-Trust para SaaS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test_bunkercore.js"
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "postgres": "^3.4.9"
+  }
+}
