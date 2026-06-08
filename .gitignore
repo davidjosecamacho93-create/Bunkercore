@@ -1,2 +1,21 @@
+<<<<<<< HEAD
 node_modules
 .env
+=======
+# Secretos y configuración
+secrets/
+.env
+*.pem
+*.key
+bunker*
+
+# Dependencias
+node_modules/
+dist/
+build/
+
+# Logs y basura del sistema
+*.log
+.DS_Store
+.npm/
+>>>>>>> 9a568783af7b7aceab9ba9cb883cb6f0f94cae3e
