@@ -1,4 +1,4 @@
-import { bunkercore } from './index.js';
+import { bunkercore } from '../src/api/server.js';
 
 const runTest = async () => {
     console.log("--- INICIANDO SIMULACIÓN DE SEGURIDAD ---");

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Bunkercore: Acceso Biométrico</h1>
+    <p id="status">Verificando identidad...</p>
+
+    <script type="module">
+        import { startRegistration } from 'https://unpkg.com/@simplewebauthn/browser@10.0.0/dist/bundle/index.mjs';
+
+        const status = document.getElementById('status');
+
+        async function startAuth() {
+            const res = await fetch('/authn/options/david);
+            const options = await res.json();
+
+            try {
+                const asseResp = await startAuthenticationn(options);
+                const verif = await fetch('/register/verify', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(attResp),
+                });
+                await fetch('/auth/verify', { ... });
+                status.innerText = "¡Huella registrada permanentemente en Neon!";
+                }
+            } catch (e) {
+                status.innerText = "Error: " + e.message;
+            }
+        };
+    </script>
+</body>
+</html>

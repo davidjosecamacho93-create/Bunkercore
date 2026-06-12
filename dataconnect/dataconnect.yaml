@@ -1,0 +1,13 @@
+specVersion: "v1"
+serviceId: "bunkercore-3d504-service"
+location: "us-central1"
+schemas:
+  - source: "./schema"
+    datasource:
+      postgresql:
+        database: "bunkercore-3d504-database"
+        cloudSql:
+          instanceId: "bunkercore-3d504-instance"
+          # schemaValidation: "STRICT"     # STRICT mode makes Postgres schema match Data Connect exactly.
+          # schemaValidation: "COMPATIBLE" # COMPATIBLE mode makes Postgres schema compatible with Data Connect.
+connectorDirs: ["./example"]
