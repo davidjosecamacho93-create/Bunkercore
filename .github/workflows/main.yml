@@ -1,12 +1,25 @@
-name: Bunkercore CI
-on: [pull_request]
+name: Bunkercore
+
+on:
+  pull_request:
+    branches: [ "main", "master" ] # Opcional: para que solo corra en PRs hacia tus ramas principales
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 20
-    - run: npm ci
-    - run: node tests/test_crypto_security.js
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm' # Esto acelera futuras ejecuciones guardando en caché las dependencias
+
+      - name: Instalar dependencias limpias
+        run: npm ci
+
+      - name: Ejecutar pruebas de seguridad criptográfica
+        run: node tests/test_crypto_security.js
