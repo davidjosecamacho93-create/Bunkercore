@@ -1,11 +1,18 @@
-# Bunkercore
+# ¡Hola! Soy David José Camacho González 🛡️
 
-Infraestructura de Identidad Zero-Trust B2B. Eliminamos la vulnerabilidad cognitiva de las contraseñas mediante autenticación FIDO2/WebAuthn. Arquitectura soberana con cifrado AES-256-GCM y motor optimizado para ARM64.
+Soy un desarrollador apasionado por la **ciberseguridad**, la computación en la nube y la creación de soluciones escalables. Me especializo en construir infraestructuras seguras y robustas.
 
-## Estado del Proyecto
-[![Bunkercore CI](https://github.com/camachogonzalezdavidjose-stack/bunkercore/actions/workflows/main.yml/badge.svg)](https://github.com/camachogonzalezdavidjose-stack/bunkercore/actions)
+### 🛠 Tech Stack & Habilidades
+- **Seguridad:** Hardening de sistemas, auditoría básica, protección de APIs.
+- **Cloud:** Experto en Google Cloud Platform (GCP).
+- **Backend:** Arquitectura orientada a servicios, Firebase, bases de datos SQL.
+- **Mobile:** Desarrollo híbrido con Capacitor y Android nativo.
 
-## Arquitectura
-- **Identity:** FIDO2/WebAuthn.
-- **Database:** PostgreSQL (Neon).
-- **Core:** Node.js, Express, CipherORM.
+### 📈 Mi Progreso
+Estoy en constante aprendizaje y validación de mis habilidades. Puedes ver mis logros técnicos aquí:
+* 🎓 **Google Cloud Skills:** [Mi perfil de certificaciones y laboratorios](https://www.skills.google/public_profiles/97915bc5-c58c-48fd-8b82-df9a170bdd63)
+* 🔬 **Investigación:** [Mi perfil ORCID](orcid logo
+0009-0006-7597-9825)
+
+---
+*Siempre estoy abierto a colaborar en proyectos desafiantes, especialmente aquellos enfocados en seguridad y nube. ¡Conectemos!*
