@@ -1,0 +1,10 @@
+#!/bin/bash
+# Buscar usando un comodín (*) para capturar el JAR con cualquier número de versión
+GRADLE_JAR=$(find $PREFIX -name "gradle-launcher*.jar" 2>/dev/null | head -n 1)
+
+if [ -z "$GRADLE_JAR" ]; then
+    echo "Error: No se encontró gradle-launcher*.jar en Termux."
+    exit 1
+fi
+
+java -jar -Dorg.gradle.java.home=$JAVA_HOME "$GRADLE_JAR" "$@"
