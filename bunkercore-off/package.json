@@ -1,10 +1,23 @@
 {
+  "name": "bunkercore-v2",
+  "version": "2.0.0",
+  "description": "Sistema de Autenticación de Alta Seguridad con Passkeys",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev"
+  },
   "dependencies": {
     "@google/genai": "^2.10.0",
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@react-oauth/google": "^0.13.5",
     "@simplewebauthn/browser": "^13.3.0",
+    "@simplewebauthn/server": "^13.3.0",
     "dotenv": "^17.4.2",
     "next": "^16.2.9",
     "pg": "^8.22.0",
@@ -13,11 +26,8 @@
   },
   "devDependencies": {
     "@prisma/driver-adapter-utils": "^7.8.0",
-    "prisma": "^7.8.0"
-  },
-  "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start"
+    "prisma": "^7.8.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^16.2.9"
   }
 }
