@@ -1,12 +1,30 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  webpack: (config, { dev, isServer }) => {
-    if (dev && !isServer) {
-      // Deshabilita el caché en disco de Webpack para evitar snapshots corruptos en Termux
-      config.cache = false;
-    }
-    return config;
+  swcMinify: true,
+  experimental: {
+    optimizeFonts: true,
+  },
+  headers: async () => {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+        ],
+      },
+    ];
   },
 };
 
